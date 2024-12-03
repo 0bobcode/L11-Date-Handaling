@@ -3,6 +3,12 @@
    margin: 0px;
    padding:0px;
 }
+header{
+position: sticky;
+top:0px;
+background-color: #ccc;
+}
+
 
 h1{
     text-align: center;
@@ -18,9 +24,14 @@ h1{
     justify-content: center;
     color: rgb(255, 255, 255);
 }
+#sec-0{
+background-color: blue;
+}
+
 
 #sec-1{
     background-color: brown;
+    
 }
 
 

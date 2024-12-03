@@ -1,3 +1,6 @@
+
+
+
 const today = new Date(); //global date declaration
 today.setHours(0,0,0,0)// normalize todays date for accurate calculation
 
@@ -21,10 +24,13 @@ function calculateDaysRemaining(){
 
 
 function calculateAge(){
+    let user_input = document.getElementById("name").value
     let birthdate = new Date(birthdateInput.value)
     let age = today.getFullYear() - birthdate.getFullYear()
     let monthDiff = today.getMonth() - birthdate.getFullYear()
-    ageDisplay.textContent =`you are ${age} years old`
+    ageDisplay.textContent =`${user_input} is ${age} years old`
 }
 
 calculateAgeButton.addEventListener("click" ,calculateAge)
+
+
